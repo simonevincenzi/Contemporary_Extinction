@@ -53,6 +53,13 @@ The script `Plot_repro_cat` creates the plot (`plot_repro_cat`) and data frames 
 
 ![Plot_pred_obs_ext](https://github.com/simonevincenzi/Contemporary_Extinction/blob/master/Plots/Plot_pred_obs_ext.png)
 
+
+`source("Plot_imp")` produces the importance plot for the RF (full and base) models for prediction of contemporary extinction.
+
+
+![Plot_imp](https://github.com/simonevincenzi/Contemporary_Extinction/blob/master/Plots/Plot_imp.png)
+
+
 ## 4. Manuscript
 
 A pre-print can be found at 

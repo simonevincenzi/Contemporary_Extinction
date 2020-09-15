@@ -1,9 +1,5 @@
 
-
-
-
-
-
+### Importance plot for Random Forest
 
 size.title = 15
 line.lwd = 1
@@ -93,7 +89,7 @@ geom_point(size = size.point) +
   coord_flip()
 
 
-ext.rf.full = readRDS("ext.rf.red.RDS")
+ext.rf.full = readRDS("ext.rf.base.RDS")
 imp = (varImp(ext.rf.full,)$importance)
 imp = data.frame(var = rownames(imp), importance = imp$Overall)
 imp$var = as.factor(imp$var)
@@ -125,11 +121,11 @@ plot_imp_red = ggplot(data = imp, aes(x=reorder(var,importance), y=importance)) 
 # plot(ext.gam.full)
 
 
-Plot_imp_all = plot_grid(plot_imp_full,
+Plot_imp = plot_grid(plot_imp_full,
                          plot_imp_red,
                          labels = c("(a)", "(b)"),
                          nrow = 1, align = "v",hjust = -5)
 
-Plot_imp_all
+Plot_imp
 
 # 15 7
