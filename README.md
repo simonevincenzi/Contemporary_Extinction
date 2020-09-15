@@ -20,6 +20,8 @@ The script `load_packages.r` installs and loads the libraries needed. The script
 
 ## 2. Analysis of simulation results    
 
+Download some pre-saved data and model files from [https://figshare.com/articles/dataset/Contemporary_Extinction/12959948](https://figshare.com/articles/dataset/Contemporary_Extinction/12959948) and move them in the same folder as the other scripts.
+
 `source("Plot_sim_example.r")` produces a panel of three simulation replicates (details in the code). The plot object is saved as `plot_sim_example`.
 
 ![Plot_sim_example](https://github.com/simonevincenzi/Contemporary_Extinction/blob/master/Plots/Plot_sim_example.png)
@@ -46,6 +48,7 @@ The script `Plot_repro_cat` creates the plot (`plot_repro_cat`) and data frames 
 `source("test_pred_full.r")` makes predictions for the full models, summary results are saved in `acc_table_full_df` (predictions are also added to the data frame `ext.stand.df.val`). `source("cont_ext_mod_fit.r")` makes predictions for the base models, summary results are saved in `acc_table_base_df` (predictions are also added to the data frame `ext.stand.df.val`).  
 
 `source("Plot_pred_obs_ext.r")` plots 4 examples of matching/mis-matching predictions of the models (saved in object `plot_pred_obs_ext`).
+
 
 
 ![Plot_pred_obs_ext](https://github.com/simonevincenzi/Contemporary_Extinction/blob/master/Plots/Plot_pred_obs_ext.png)
